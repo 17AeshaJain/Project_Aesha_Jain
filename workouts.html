@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workouts — FitStart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Fit<span>Start</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="workouts.html" class="active">Workouts</a></li>
+    <li><a href="yoga.html">Yoga</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+</nav>
+
+<a href="index.html" class="back-btn">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+  ⬅ Go Back to Home
+</a>
+<section class="page-hero">
+  <h1>💪 WORKOUT HUB</h1>
+  <p>Choose your training style. All plans are beginner-safe, clearly explained, and completely free. Pick a track and start moving today.</p>
+</section>
+
+<section class="section">
+  <p class="section-label">Tracks</p>
+  <h2 class="section-title">Choose Your Training Style</h2>
+  <p class="section-sub">No equipment? No problem. Got a gym membership? We've got you too. Prefer something calmer? Try yoga.</p>
+
+  <div class="feature-grid">
+    <a href="home-workout.html" class="feature-card" style="text-decoration:none;color:inherit;">
+      <span class="emoji">🏠</span>
+      <span class="tag">No Equipment</span>
+      <h3>HOME WORKOUTS</h3>
+      <p>Pure bodyweight training you can do anywhere — bedroom, park, hostel corridor. No excuses, no equipment needed.</p>
+      <div style="margin-top:auto;padding-top:16px;">
+        <span class="btn-primary-sm">Start Here →</span>
+      </div>
+    </a>
+    <a href="gym.html" class="feature-card" style="text-decoration:none;color:inherit;">
+      <span class="emoji">🏋️</span>
+      <span class="tag">With Equipment</span>
+      <h3>GYM WORKOUTS</h3>
+      <p>Beginner-friendly plans using dumbbells, barbells, cables, and machines. Perfect for those with gym access.</p>
+      <div style="margin-top:auto;padding-top:16px;">
+        <span class="btn-primary-sm">Explore Gym →</span>
+      </div>
+    </a>
+    <a href="yoga.html" class="feature-card" style="text-decoration:none;color:inherit;">
+      <span class="emoji">🧘</span>
+      <span class="tag">Mind &amp; Body</span>
+      <h3>YOGA &amp; MOBILITY</h3>
+      <p>Poses for flexibility, stress relief, and recovery. Works alone or as the perfect complement to any workout plan.</p>
+      <div style="margin-top:auto;padding-top:16px;">
+        <span class="btn-primary-sm">Try Yoga →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="section section-alt" id="weekly">
+  <p class="section-label">Schedule</p>
+  <h2 class="section-title">Beginner Weekly Routine</h2>
+  <p class="section-sub">A balanced 7-day plan mixing strength, cardio, and recovery. Pick either the home or gym track for the workout days.</p>
+
+  <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;overflow-x:auto;">
+    <table class="week-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Focus</th>
+          <th>Duration</th>
+          <th>Key Exercises</th>
+          <th>Intensity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="day-col">Monday</td>
+          <td><strong>Full Body Strength</strong></td>
+          <td>30–40 min</td>
+          <td>Squats · Push-ups · Rows · Plank</td>
+          <td><span class="ex-badge badge-beginner">Moderate</span></td>
+        </tr>
+        <tr>
+          <td class="day-col">Tuesday</td>
+          <td><strong>Cardio + Core</strong></td>
+          <td>25–35 min</td>
+          <td>Jumping Jacks · High Knees · Crunches · Leg Raises</td>
+          <td><span class="ex-badge badge-beginner">Light</span></td>
+        </tr>
+        <tr>
+          <td class="day-col">Wednesday</td>
+          <td><strong>Upper Body</strong></td>
+          <td>30–40 min</td>
+          <td>Push-ups · Dumbbell Press · Tricep Dips · Shoulder Taps</td>
+          <td><span class="ex-badge badge-intermediate">Moderate</span></td>
+        </tr>
+        <tr class="rest-row">
+          <td class="day-col" style="color:var(--muted);">Thursday</td>
+          <td>Active Recovery / Yoga</td>
+          <td>20–30 min</td>
+          <td>Light stretching · Yoga flow · Walk</td>
+          <td><span class="ex-badge badge-beginner">Easy</span></td>
+        </tr>
+        <tr>
+          <td class="day-col">Friday</td>
+          <td><strong>Lower Body</strong></td>
+          <td>35–45 min</td>
+          <td>Lunges · Glute Bridges · Wall Sit · Calf Raises</td>
+          <td><span class="ex-badge badge-intermediate">Moderate</span></td>
+        </tr>
+        <tr>
+          <td class="day-col">Saturday</td>
+          <td><strong>Full Body HIIT</strong></td>
+          <td>20–30 min</td>
+          <td>Burpees · Mountain Climbers · Jump Squats · Plank</td>
+          <td><span class="ex-badge badge-advanced">High</span></td>
+        </tr>
+        <tr class="rest-row">
+          <td class="day-col" style="color:var(--muted);">Sunday</td>
+          <td>Complete Rest</td>
+          <td>—</td>
+          <td>Sleep, eat well, hydrate, relax</td>
+          <td><span class="ex-badge badge-beginner">Rest</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tips-grid mt-32">
+    <div class="tip-card">
+      <h4>⚠️ Warm Up Always</h4>
+      <p>Spend 5 minutes doing light jogging in place, arm circles, and hip rotations before every session. This prevents injury and improves performance.</p>
+    </div>
+    <div class="tip-card">
+      <h4>🧊 Cool Down Matters</h4>
+      <p>End every workout with 5 minutes of static stretching. Hold each stretch 20–30 seconds. Your future self will thank you.</p>
+    </div>
+    <div class="tip-card">
+      <h4>📈 Progressive Overload</h4>
+      <p>Add 1–2 reps or a slightly harder variation each week. Consistent small improvements compound into massive results over months.</p>
+    </div>
+    <div class="tip-card">
+      <h4>😴 Rest = Growth</h4>
+      <p>Muscles grow during recovery, not during the workout itself. Never skip rest days — they are part of the program, not a sign of weakness.</p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <p class="section-label">Basics</p>
+  <h2 class="section-title">Fitness Fundamentals</h2>
+  <p class="section-sub">Master these concepts and you'll understand more than 90% of gym beginners.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🔄</div>
+      <div class="card-title">Sets &amp; Reps</div>
+      <p class="card-body">A "rep" is one complete movement. A "set" is a group of reps. Beginners typically start with 3 sets of 8–12 reps per exercise.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⏱️</div>
+      <div class="card-title">Rest Periods</div>
+      <p class="card-body">Rest 60–90 seconds between sets for strength. 30–45 seconds for cardio/endurance. Rest is productive — use it intentionally.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📐</div>
+      <div class="card-title">Form First</div>
+      <p class="card-body">Always prioritise correct form over weight or speed. Bad form = injury. Record yourself or use a mirror to self-correct.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🫀</div>
+      <div class="card-title">Heart Rate Zones</div>
+      <p class="card-body">Zone 2 (60–70% max HR) burns fat. Zone 4 (80–90%) builds cardio fitness. Start with Zone 2 to build base aerobic capacity.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏆</div>
+      <div class="card-title">Consistency Wins</div>
+      <p class="card-body">3 mediocre workouts a week beats 1 perfect session. Show up. Results come from weeks and months of consistent effort.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📓</div>
+      <div class="card-title">Track Your Progress</div>
+      <p class="card-body">Write down your workouts — exercises, sets, reps, weight. Seeing progress on paper is one of the strongest motivators.</p>
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <p class="section-label">FAQ</p>
+  <h2 class="section-title">Common Beginner Questions</h2>
+  <p class="section-sub">Answers to the questions every new fitness person asks.</p>
+
+  <div class="accordion" style="max-width:720px;">
+    <div class="accordion__item open">
+      <button class="accordion__header">How many days a week should I work out? <span class="accordion__chevron">▾</span></button>
+      <div class="accordion__body">
+        <p>3–4 days per week is ideal for beginners. This gives you enough stimulus to make progress while allowing adequate recovery between sessions. Start with 3 and add a 4th day after 4–6 weeks once you feel comfortable.</p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">Should I do cardio or weights first? <span class="accordion__chevron">▾</span></button>
+      <div class="accordion__body">
+        <p>For most goals, do weights first, then cardio. Strength training requires more neuromuscular coordination and energy — doing it fatigued after cardio reduces effectiveness and increases injury risk. If you're training primarily for cardio fitness, flip the order.</p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">How long before I see results? <span class="accordion__chevron">▾</span></button>
+      <div class="accordion__body">
+        <p>You'll feel better within 2 weeks (energy, mood, sleep). Visible physical changes typically take 4–8 weeks of consistent training and good nutrition. Strength gains happen faster — you'll notice you can lift more or do more reps within 2–3 weeks.</p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">Is soreness (DOMS) normal? <span class="accordion__chevron">▾</span></button>
+      <div class="accordion__body">
+        <p>Yes — Delayed Onset Muscle Soreness (DOMS) peaks 24–48 hours after exercise and is totally normal for beginners. Light movement, stretching, and adequate protein help recovery. Sharp joint pain is NOT normal — that signals a problem that needs rest or medical attention.</p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">Do I need protein shakes? <span class="accordion__chevron">▾</span></button>
+      <div class="accordion__body">
+        <p>No — they're a supplement, not a requirement. If you're hitting your protein target (0.7–1g per pound of bodyweight) through whole foods like chicken, eggs, lentils, paneer, or tofu, you don't need a shake. Protein powder is simply a convenient option when whole food is impractical.</p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__header">What should I eat before and after a workout? <span class="accordion__chevron">▾</span></button>
+      <div class="accordion__body">
+        <p><strong>Before:</strong> Eat a balanced meal 1–2 hours before (rice + chicken, oats + banana, etc.). If less time, have a banana or a small snack 30 min before.<br><br><strong>After:</strong> Within 45 minutes post-workout, consume protein + carbs. A protein shake + banana, or rice + paneer, or eggs on toast all work great for recovery and muscle building.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Fit<span>Start</span></div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="workouts.html">Workouts</a>
+    <a href="yoga.html">Yoga</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
