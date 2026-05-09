@@ -1,70 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — FitStart</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <h1 class="logo">FitStart</h1>
-
+    <nav>
+        <a href="index.html" class="nav-logo">Fit<span>Start</span></a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="workouts.html">Workouts</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="yoga.html">Yoga</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
     </nav>
-</header>
 
-<section class="page-banner">
-    <h1>Contact Us</h1>
-</section>
+    <a href="index.html" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Go Back Home
+    </a>
 
-<section class="section">
+    <section class="page-hero">
+        <h1> GET IN TOUCH</h1>
+        <p>Have a question, suggestion, or just want to say hi? Fill out the form and we'll get back to you. No spam, no
+            newsletters — just a real reply.</p>
+    </section>
 
-    <div class="contact-container">
+    <section class="section">
+        <div class="contact-wrap">
 
-        <div class="contact-info">
-            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <h2>LET'S TALK FITNESS</h2>
+                <p>Whether you're stuck on a workout, want a routine recommendation, or have feedback on FitStart —
+                    we're listening.</p>
 
-            <p>
-                Have questions or suggestions? We'd love to hear from you.
-            </p>
+                <div class="contact-card">
+                    <span class="icon">🎯</span>
+                    <div>
+                        <h4>Workout Advice</h4>
+                        <p>Ask about exercises, form tips, or which track suits your goals best.</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <span class="icon">💡</span>
+                    <div>
+                        <h4>Suggestions & Feedback</h4>
+                        <p>Want a new feature or notice something off? Tell us — we actually read every message.</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <span class="icon">🤝</span>
+                    <div>
+                        <h4>Collaboration</h4>
+                        <p>Student project, content idea, or academic enquiry — reach out and let's connect.</p>
+                    </div>
+                </div>
 
-            <p>Email: fitstart@gmail.com</p>
-            <p>Phone: +91 9XXXXXXX10</p>
+
+            </div>
+
+            <div>
+                <form class="contact-form" id="contactForm" onsubmit="validateContact(event)" novalidate>
+                    <h3>SEND A MESSAGE</h3>
+                    <p style="color:var(--muted);font-size:.9rem;margin-top:-4px;">All fields are required.</p>
+
+                    <div class="field-row">
+                        <div class="form-group">
+                            <label for="cName">Full Name</label>
+                            <input type="text" id="cName" placeholder="e.g. Aesha Jain" autocomplete="name" />
+                            <span class="error-msg" id="errName"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="cEmail">Email Address</label>
+                            <input type="email" id="cEmail" placeholder="you@example.com" autocomplete="email" />
+                            <span class="error-msg" id="errEmail"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cGoal">Your Fitness Goal</label>
+                        <select id="cGoal">
+                            <option value="">— Select a goal —</option>
+                            <option value="lose-weight">Lose Weight</option>
+                            <option value="build-muscle">Build Muscle</option>
+                            <option value="improve-fitness">Improve General Fitness</option>
+                            <option value="flexibility">Improve Flexibility / Yoga</option>
+                            <option value="just-start">Just Getting Started</option>
+                            <option value="other">Other / Just a Question</option>
+                        </select>
+                        <span class="error-msg" id="errGoal"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cMessage">Your Message</label>
+                        <textarea id="cMessage"
+                            placeholder="Tell us what's on your mind — questions, feedback, anything..."></textarea>
+                        <span class="error-msg" id="errMessage"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width:100%;justify-content:center;font-size:1rem;">
+                        Send Message →
+                    </button>
+                </form>
+
+                <div class="form-success" id="formSuccess">
+                    <div style="font-size:2.5rem;margin-bottom:12px;">🎉</div>
+                    <strong>Message sent!</strong>
+                    <p
+                        style="font-size:.9rem;color:var(--muted);margin-top:8px;font-family:var(--font-body);font-weight:400;letter-spacing:0;">
+                        Thanks for reaching out. We'll get back to you soon. In the meantime, go crush a workout!
+                    </p>
+                    <a href="workouts.html" class="btn-primary" style="display:inline-flex;margin-top:20px;">Browse
+                        Workouts →</a>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-        <form id="contactForm">
+    <section class="section section-alt">
+        <p class="section-label">FAQ</p>
+        <h2 class="section-title">Common Questions</h2>
+        <p class="section-sub">Quick answers before you hit send.</p>
 
-            <input type="text" id="name" placeholder="Enter your name">
+        <div class="tips-grid">
+            <div class="tip-card">
+                <h4>Do I need equipment?</h4>
+                <p>Not at all. Our Home Workout track is 100% bodyweight. The gym track is separate and clearly
+                    labelled.</p>
+            </div>
+            <div class="tip-card">
+                <h4>Is FitStart really free?</h4>
+                <p>Yes — completely. No sign-up, no subscription, no ads. It's a student project built to genuinely help
+                    beginners.</p>
+            </div>
+            <div class="tip-card">
+                <h4>I'm a complete beginner — where do I start?</h4>
+                <p>Head to the Home Workout page and start with Level 1. Do it 3× per week for 4 weeks before moving up.
+                </p>
+            </div>
+            <div class="tip-card">
+                <h4>How often should I work out?</h4>
+                <p>3–4 days per week is ideal for beginners. Rest and recovery are just as important as the workout
+                    itself.</p>
+            </div>
+            <div class="tip-card">
+                <h4>Can I do yoga and workouts on the same day?</h4>
+                <p>Absolutely. Yoga is great as a warm-up or cool-down. A short yoga session after strength training
+                    aids recovery.</p>
+            </div>
+            <div class="tip-card">
+                <h4>Will my data be stored?</h4>
+                <p>No. This form is for demonstration purposes as part of a web design project. No data is stored or
+                    transmitted.</p>
+            </div>
+        </div>
+    </section>
 
-            <input type="email" id="email" placeholder="Enter your email">
+    <footer>
+        <div class="footer-logo">Fit<span>Start</span></div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="workouts.html">Workouts</a>
+            <a href="yoga.html">Yoga</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
 
-            <textarea id="message" placeholder="Enter your message"></textarea>
-
-            <button type="submit">Send Message</button>
-
-            <p id="formMessage"></p>
-
-        </form>
-
-    </div>
-
-</section>
-
-<div style="text-align:center; margin-top:40px;">
-    <a href="javascript:history.back()" class="btn">⬅ Go Back</a>
-</div>
-
-<footer>
-    <p>2026 FitStart</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
